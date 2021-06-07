@@ -1,3 +1,3 @@
 # snake-game
 
-A project using Canvas amd java script for create a anake game.
+A project using Canvas and java script for create a anake game.
