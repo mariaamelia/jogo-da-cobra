@@ -1,7 +1,7 @@
-let canvas = document.getElementById("snake")
+let canvas = document.getElementById("snake") // create the element that will pay the game
 let context = canvas.getContext("2d")
 let box = 32;
-let snake = [];
+let snake = []; // It creates the snake as list, as It'll be  a series of coordinates, which when painted, create the little squares
 snake[0] = { x: 8*box , y: 8*box}
 let direction = "right";
 
@@ -14,7 +14,7 @@ let food = {
 function createBG(){
     //a cor 
     context.fillStyle = "lightgreen"
-    //Draw a rect  with 16 altura x 16 largura
+    //Draw the rectangle  with x coordenate and  and coordenate y  seated before
     context.fillRect(0,0,16*box, 16*box)
 }
 
@@ -86,7 +86,7 @@ function startGame(){
         x:snakeX,
         y: snakeY
     }
-    snake.unshift(newHead);
+    snake.unshift(newHead); //This unshift method adds  as the snake's first square  
 }
 
 let jogo = setInterval(startGame, 200)
